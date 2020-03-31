@@ -37,7 +37,7 @@ describe("Feedback Anonymous", () => {
         await page.$eval( '#doorbell-button', el => el.click() );
 
         await page.waitForSelector('#doorbell', {visible: true});
-        await page.type('#doorbell-feedback', 'Ceci est un message pour un test');
+        await page.type('#doorbell-feedback', 'Test to run test on push');
         await page.type('#doorbell-email', 'test@test');
         await page.screenshot({path: './tests/img/feedback31.png'});
 

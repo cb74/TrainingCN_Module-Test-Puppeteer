@@ -6,6 +6,7 @@ describe("Feedback Anonymous", () => {
 
     // vérification d'un feedback réussi
     test('feedback with success response', async () => {
+        console.log('pour test on push');
         await page.goto('http://polr.web-74.com');
 
         await page.waitForSelector('#doorbell-button');
